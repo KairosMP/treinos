@@ -6,8 +6,55 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans';
 }
 
-main > section {
-    display: flex;
+html, body {
+    width: 96vw;
+    height: 95vh;
 }
+
+header {
+    width: 95%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    padding: 10px;
+    margin: 10px;
+}
+
+section {
+    width: 95%;
+
+    border: 1px solid black;
+    margin: 10px auto;
+    padding: 15px;
+}
+
+strong {
+    color: black;
+}
+
+p {
+    color: hsl(219, 14%, 63%);
+}
+
+a {
+    color: hsl(219, 14%, 63%);
+    text-decoration: none;
+}
+
+mark {
+    background-color: white;
+    color: hsl(219, 12%, 42%);
+}
+
+i {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: orange;
+}
+
