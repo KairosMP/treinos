@@ -70,16 +70,18 @@ output {
 /* Botão de ler todas as mensagens */
 
 button {
-    margin-left: 15px;
-    padding: 0px;   
-    border: 0px ;
+    all: unset;
     white-space: nowrap;
 
     font-size: 1.0em;
     text-align: right;
 
-    background-color: white;
     color: #898A8E;
+}
+
+button:hover {
+    color: #0A3873;
+    cursor: pointer;
 }
 
 /* Corpo da mensagens */
@@ -99,10 +101,6 @@ section.unRead {
 }
 
 /* Foto de Pefil */
-
-figure {
-    margin-right: 15px;
-}
 
 img {
     width: 50px;
@@ -124,6 +122,7 @@ mark {
     background: none;
     color: #5C636B;
     font-weight: 600;
+
 }
 
 a {
@@ -148,6 +147,10 @@ blockquote {
     width: 290px;
 }
 
+blockquote:hover {
+    background-color: hsl(211, 68%, 94%);
+}
+
 /* Icone de mensagem não lida */
 
 i {
@@ -156,4 +159,14 @@ i {
     height: 7px;
     border-radius: 50%;
     background-color: hsl(1, 90%, 64%);
+}
+
+/* Formatações globais */
+
+:is(a, blockquote, img, strong, mark) {
+    cursor: pointer;
+}
+
+:is(a, strong, mark):hover {
+    color: hsl(219, 85%, 26%);
 }
