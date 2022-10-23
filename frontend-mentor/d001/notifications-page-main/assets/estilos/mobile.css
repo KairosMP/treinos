@@ -24,7 +24,7 @@ main {
     gap: 1rem;
     align-items: center;
     
-    max-width: 375px;
+    min-width: 375px;
     margin: auto;
 
 }
@@ -35,7 +35,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
-    max-width: 375px;
+    min-width: 375px;
 
     margin: auto; 
     padding: 10px;
@@ -147,10 +147,6 @@ blockquote {
     width: 290px;
 }
 
-blockquote:hover {
-    background-color: hsl(211, 68%, 94%);
-}
-
 /* Icone de mensagem não lida */
 
 i {
@@ -159,14 +155,4 @@ i {
     height: 7px;
     border-radius: 50%;
     background-color: hsl(1, 90%, 64%);
-}
-
-/* Formatações globais */
-
-:is(a, blockquote, img, strong, mark) {
-    cursor: pointer;
-}
-
-:is(a, strong, mark):hover {
-    color: hsl(219, 85%, 26%);
 }

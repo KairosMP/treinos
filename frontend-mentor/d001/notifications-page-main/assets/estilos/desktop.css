@@ -1,1 +1,43 @@
 @charset "UTF-8";
+
+:is(a, blockquote, img, strong, mark) {
+    cursor: pointer;
+}
+
+:is(a, strong, mark):hover {
+    color: hsl(219, 85%, 26%);
+}
+
+blockquote:hover {
+    background-color: hsl(211, 68%, 94%);
+}
+
+body {
+    background-color: hsl(210, 60%, 98%);
+}
+
+header {
+    margin-top: 50px;
+    width: 690px;
+
+    border-radius: 10px 10px 0px 0px;
+    grid-template-columns: 140px 100px 1fr;
+    background-color: white;
+
+    padding: 20px;
+}
+
+main {
+    background-color: white;
+    width: 690px;
+
+    border-radius: 0px 0px 10px 10px;
+}
+
+section {
+    width: 670px;
+}
+
+blockquote {
+    width: 580px;
+}
