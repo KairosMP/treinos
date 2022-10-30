@@ -41,3 +41,7 @@ section {
 blockquote {
     width: 580px;
 }
+
+figure {
+    margin-left: 190px;
+}
