@@ -6,11 +6,6 @@ function ler_todas_mensagens(params) {
         elemento.classList.remove('unRead');
     });
 
-    let icones = document.querySelectorAll('i')
-
-    Array.from(icones).forEach((icones) => {
-        icones.style.display = 'none'
-    })
 
     let notificacao = document.querySelector("output")
 

@@ -100,6 +100,17 @@ section.unRead {
     background-color: hsla(200, 40%, 80%, 0.120);
 }
 
+section.unRead > article > p::after {
+    content: "";
+    display: inline-block;
+    margin-bottom: 1px;
+    margin-left: 8px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: hsl(1, 90%, 55%);
+}
+
 /* Foto de Pefil */
 
 img {
@@ -115,6 +126,7 @@ p {
 }
 
 strong {
+    font-weight: 800;
     color: black;
 }
 
@@ -147,12 +159,3 @@ blockquote {
     width: 290px;
 }
 
-/* Icone de mensagem não lida */
-
-i {
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background-color: hsl(1, 90%, 64%);
-}
